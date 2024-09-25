@@ -1,0 +1,9 @@
+:root {
+    --bg-color: #000;
+    --main-brand-color: #fd07079a;
+}
+
+.main-bg {
+    background-color: var(--bg-color);
+    color: var(--main-brand-color);
+}
