@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--main-brand-color);
+        
+    }
+}
+
+.navigation .lists {
+    display: flex;
+    flex-direction: column; 
+}
+
+.navigation .lists li {
+    list-style: none;
+}
+
+.navigation .lists li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease; 
+}
+
+.navigation .lists li a:hover {
+    color: #ffcc00;
+}
+
+
+@media (min-width: 768px) {
+    .navigation .lists {
+        flex-direction: row; /
+    }
+}

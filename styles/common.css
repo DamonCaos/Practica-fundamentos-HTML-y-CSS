@@ -1,6 +1,7 @@
 :root {
-    --bg-color: #000;
-    --main-brand-color: #fd07079a;
+    --bg-color: #C1E1C1;
+    --main-brand-color: #000;
+    --main-font-color: #c9c9c9;
 }
 
 .main-bg {
