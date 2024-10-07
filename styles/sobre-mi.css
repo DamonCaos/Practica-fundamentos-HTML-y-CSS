@@ -1,0 +1,82 @@
+.about-me {
+    padding: 20px;
+    color: var(--main-font-color);
+}
+
+.about-me h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    margin-bottom: 20px;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #333; 
+    border-radius: 5px; 
+    height: 10px; 
+    overflow: hidden; 
+}
+
+.progress {
+    height: 100%; 
+    border-radius: 5px; 
+    animation: fill 2s ease forwards; 
+}
+
+
+.html {
+    background-color: var(--main-brand-color); 
+    animation: fill-html 2s ease forwards; 
+}
+
+.css {
+    background-color: var(--main-brand-color);
+    animation: fill-css 2s ease forwards;
+}
+
+.js {
+    background-color: var(--main-brand-color);
+    animation: fill-js 2s ease forwards;
+}
+
+.python {
+    background-color: var(--main-brand-color);
+    animation: fill-python 2s ease forwards;
+}
+
+
+@keyframes fill-html {
+    from { width: 0%; }
+    to { width: 30%; } 
+}
+
+@keyframes fill-css {
+    from { width: 0%; }
+    to { width: 40%; } 
+}
+
+@keyframes fill-js {
+    from { width: 0%; }
+    to { width: 20%; } 
+}
+
+@keyframes fill-python {
+    from { width: 0%; }
+    to { width: 10%; } 
+}
+
