@@ -73,12 +73,12 @@
     background-color: #0056b3;
 }
 
-/* Efecto al pasar sobre el proyecto */
+
 .proyecto:hover {
     transform: translateY(-10px);
 }
 
-/* Media query para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .proyectos-grid {
         grid-template-columns: 1fr;
