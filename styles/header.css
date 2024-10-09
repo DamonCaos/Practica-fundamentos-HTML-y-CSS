@@ -1,59 +1,115 @@
+/* General header styles */
 .header {
+    background-color: #1e1e1e;
+    color: white;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%; /* Asegura que el header cubra todo el ancho */
-    z-index: 100; /* Coloca el header por encima de otros elementos */
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header .container {
+    max-width: 1200px;
+    /* Limita el ancho máximo del contenido del header */
+    margin: 0 auto;
+    /* Centra el contenido horizontalmente */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #1e1e1e;
-    color: white;
-    h1 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-        color: var(--main-brand-color);
-    }
-    }
-
-
-
-
-
-.subtitle {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--secondary-color); 
-    margin-top: -10px;
 }
 
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--main-brand-color);
+    margin: 0;
+}
 
-.navigation .lists {
+.nav-links {
     display: flex;
-    flex-direction: column; 
+    gap: 15px;
 }
 
-.navigation .lists li {
+.nav-links li {
     list-style: none;
 }
 
-.navigation .lists li a {
+.nav-links a {
     text-decoration: none;
     color: white;
-    padding: 10px;
-    display: block;
-    transition: color 0.3s ease; 
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
 }
 
-.navigation .lists li a:hover {
-    color: #ffcc00;
+.nav-links a:hover {
+    background-color: var(--main-brand-color);
+    border-radius: 4px;
 }
 
+/* Menu icon styling */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
 
-@media (min-width: 768px) {
-    .navigation .lists {
-        flex-direction: row; /
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    /* Compact header for mobile */
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #1e1e1e;
+        width: 100%;
+        /* Asegura que el menú ocupe todo el ancho */
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links li {
+        margin-bottom: 15px;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    #menu-toggle:checked+.menu-icon+nav .nav-links {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Desktop adjustments */
+@media (min-width: 769px) {
+    .nav-links {
+        justify-content: center;
+        /* Centra los enlaces en pantallas más grandes */
+    }
+
+    .nav-links a {
+        padding: 10px 15px;
+        /* Añade más espacio para los enlaces */
     }
 }

@@ -5,24 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <title>Portfolio contacto</title>
 </head>
 
-<body>
+<body class="main-bg">
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">DamonCaos Portfolio</h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Sobre mi</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <form id="contact-form" action="#" method="post">
-        <!-- Nombre -->
+        
         <label for="nombre">Nombre (requerido):</label>
         <input type="text" id="nombre" name="nombre" required>
 
-        <!-- Apellidos -->
+        
         <label for="apellidos">Apellidos (requerido):</label>
         <input type="text" id="apellidos" name="apellidos" required>
 
-        <!-- Teléfono -->
+        
         <label for="telefono">Teléfono (requerido):</label>
         <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="Ej: 600123456">
 
-        <!-- ¿Cómo me conociste? -->
+        
         <fieldset>
             <legend>¿Cómo me conociste? (requerido):</legend>
             <label>
@@ -39,25 +58,36 @@
             </label>
         </fieldset>
 
-        <!-- Tag de GitHub -->
+        
         <label for="github">Tag de GitHub (Usar "@username"):</label>
         <input type="text" id="github" name="github" pattern="^@[^\s]+" placeholder="@username">
 
-        <!-- Mensaje -->
+        
         <label for="mensaje">Mensaje (max 180 caracteres, requerido):</label>
         <textarea id="mensaje" name="mensaje" maxlength="180" required></textarea>
 
-        <!-- Newsletter -->
+        
         <label>
             <input type="checkbox" name="newsletter"> Suscribirme a la newsletter
         </label>
 
-        <!-- Botones -->
+        
         <div class="buttons">
             <button type="submit">Guardar</button>
             <button type="reset">Resetear</button>
         </div>
     </form>
+
+<footer class="footer">
+    <p>&copy; 2024 F. Javier Rodriguez Romera</p>
+        <div class="social-icons">
+            <a href="https://github.com/DamonCaos" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
+            <a href="mailto:franciscoromera0816@gmail.com">Email</a>
+        </div>
+</footer>
+
+
 
 </body>
 

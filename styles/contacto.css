@@ -5,7 +5,6 @@ form {
     max-width: 600px;
     margin: 0 auto;
     background-color: #1e1e1e;
-    /* Fondo oscuro acorde a tu portfolio */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -13,10 +12,8 @@ form {
 
 label {
     font-family: 'Roboto', sans-serif;
-    /* Tipografía del portfolio */
     font-weight: bold;
     color: var(--main-brand-color);
-    /* Color del texto principal */
 }
 
 input,
@@ -24,7 +21,6 @@ textarea {
     font-family: 'Roboto', sans-serif;
     padding: 15px;
     border: 2px solid var(--main-brand-color);
-    /* Bordes con el color principal */
     border-radius: 5px;
     background-color: #2b2b2b;
     color: white;
@@ -32,7 +28,6 @@ textarea {
 
 textarea {
     resize: vertical;
-    /* Permitir solo ajuste vertical */
 }
 
 fieldset {
@@ -45,6 +40,22 @@ legend {
     font-weight: bold;
     color: var(--main-brand-color);
     margin-bottom: 10px;
+}
+
+
+.radio-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+}
+
+.radio-item input[type="radio"] {
+    margin-right: 10px; 
 }
 
 input[type="radio"] {
@@ -73,14 +84,12 @@ button[type="reset"] {
 
 button:hover {
     background-color: #0056b3;
-    /* Un tono más oscuro en hover */
 }
 
 button[type="reset"]:hover {
     background-color: #d43f3f;
 }
 
-/* Asegura que los inputs llenen todo el ancho disponible */
 input,
 textarea,
 select {

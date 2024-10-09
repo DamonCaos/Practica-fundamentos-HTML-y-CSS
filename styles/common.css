@@ -12,3 +12,8 @@
     color: var(--main-font-color);
     padding-top: 60px;
 }
+
+#video-loop video {
+    width: 100%;
+    height: auto; /* Ajusta la altura según el ancho */
+}
