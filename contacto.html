@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <title>Portfolio contacto</title>
+</head>
+
+<body>
+    <form id="contact-form" action="#" method="post">
+        <!-- Nombre -->
+        <label for="nombre">Nombre (requerido):</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <!-- Apellidos -->
+        <label for="apellidos">Apellidos (requerido):</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <!-- Teléfono -->
+        <label for="telefono">Teléfono (requerido):</label>
+        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="Ej: 600123456">
+
+        <!-- ¿Cómo me conociste? -->
+        <fieldset>
+            <legend>¿Cómo me conociste? (requerido):</legend>
+            <label>
+                <input type="radio" name="origen" value="universidad" required> Universidad
+            </label>
+            <label>
+                <input type="radio" name="origen" value="kickoff"> Keepcoding kick-off
+            </label>
+            <label>
+                <input type="radio" name="origen" value="colegio"> Colegio
+            </label>
+            <label>
+                <input type="radio" name="origen" value="github"> En Github
+            </label>
+        </fieldset>
+
+        <!-- Tag de GitHub -->
+        <label for="github">Tag de GitHub (Usar "@username"):</label>
+        <input type="text" id="github" name="github" pattern="^@[^\s]+" placeholder="@username">
+
+        <!-- Mensaje -->
+        <label for="mensaje">Mensaje (max 180 caracteres, requerido):</label>
+        <textarea id="mensaje" name="mensaje" maxlength="180" required></textarea>
+
+        <!-- Newsletter -->
+        <label>
+            <input type="checkbox" name="newsletter"> Suscribirme a la newsletter
+        </label>
+
+        <!-- Botones -->
+        <div class="buttons">
+            <button type="submit">Guardar</button>
+            <button type="reset">Resetear</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+
+.banner {
+    background-image: url('../assets/app/images/_JAG3016-1.jpg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+    background-image: url('../assets/app/images/_JAG2881.jpg');
+    height: 200px; 
+    }
+
+    .banner h1 {
+    font-size: 1.8rem; 
+    }
+}

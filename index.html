@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles/sobre-mi.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/proyectos.css">
 </head>
 
 <body class="main-bg">
@@ -19,12 +21,15 @@
         <nav class="navigation">
             <ul class="lists">
                 <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <section class="about-me">
+    <div class="banner">
+        <h1>F. Javier Rodriguez, mi portfolio</h1>
+    </div>
+    <section class="about-me" id="about">
         <h2>Sobre mí</h2>
         <p>
             Soy F. Javier Rodriguez Romera, un apasionado desarrollador web con experiencia en tecnologías como
@@ -71,6 +76,25 @@
         </div>
     </section>
 
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos-grid">
+            <div class="proyecto">
+                <img src="./assets/app/images/0x0.png" alt="Proyecto 1">
+                <h3>Mi futuro</h3>
+                <p>Bootcamp desarrollo web fullstack.</p>
+                
+            </div>
+            <div class="proyecto">
+                <img src="./assets/app/images/images.png" alt="Proyecto 2">
+                <h3>Proyecto musical</h3>
+                <p>Banda de rock desde hace mas de 10 años.</p>
+                
+            </div>
+            <!-- Agrega más proyectos de la misma forma -->
+        </div>
+    </section>
+
 
     <div></div>
     <footer class="footer">
@@ -81,7 +105,7 @@
             <a href="mailto:franciscoromera0816@gmail.com">Email</a>
         </div>
     </footer>
-    
+
 </body>
 
 </html>

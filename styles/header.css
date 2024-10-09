@@ -1,18 +1,26 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el header cubra todo el ancho */
+    z-index: 100; /* Coloca el header por encima de otros elementos */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: #1e1e1e;
     color: white;
-    h1{
+    h1 {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 24px;
         color: var(--main-brand-color);
-        
     }
-}
+    }
+
+
+
+
 
 .subtitle {
     font-size: 16px;

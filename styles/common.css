@@ -5,7 +5,10 @@
     --secondary-color: #ffcc80; 
 }
 
+
+
 .main-bg {
     background-color: var(--bg-color);
     color: var(--main-font-color);
+    padding-top: 60px;
 }
