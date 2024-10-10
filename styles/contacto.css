@@ -33,8 +33,27 @@ textarea {
 fieldset {
     border: none;
     padding: 0;
+    label {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.25rem;
+        margin-bottom: 0.35rem;
+        input {
+            width: auto;
+            order: 2;
+        }
+    }
+}
+/*
+Comprobando especifidad de CSS
+.prueba {
+    width: 100%;
 }
 
+#prueba{
+    width: auto !important;
+}
+*/
 legend {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -95,4 +114,15 @@ textarea,
 select {
     width: 100%;
     box-sizing: border-box;
+}
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
+    margin-bottom: 0.35rem;
+    input {
+        width: auto;
+        order: 2;
+    }
+
 }
