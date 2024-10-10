@@ -1,6 +1,6 @@
 
 .banner {
-    background-image: url('/assets/_JAG3016-1.jpg');
+    background-image: url('../assets/_JAG3016-1.jpg');
     height: 200px;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
 
 @media (max-width: 768px) {
     .banner {
-    background-image: url('/assets/_JAG2881.jpg');
+    background-image: url('../assets/_JAG2881.jpg');
     height: 200px; 
     align-items: flex-start;
     }
