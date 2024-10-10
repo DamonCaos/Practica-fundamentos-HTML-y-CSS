@@ -3,7 +3,13 @@
     background: linear-gradient(135deg, #000000, #1b1b1b);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+    max-width: 1200px;
+    margin: 0 auto;
+    .parrafo {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    }
 
 .about-me h2 {
     font-size: 32px;
@@ -56,6 +62,14 @@
 .css { animation: fill-css 2s ease forwards; }
 .js { animation: fill-js 2s ease forwards; }
 .python { animation: fill-python 2s ease forwards; }
+
+@media (width > 1200px) {
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
 
 @keyframes fill-html {
     from { width: 0%; }
