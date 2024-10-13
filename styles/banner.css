@@ -20,7 +20,7 @@
     .banner {
     background-image: url('../assets/JAG2881.jpg');
     height: 200px; 
-    align-items: flex-start;
+    align-items: flex-end;
     }
 
     .banner h1 {
